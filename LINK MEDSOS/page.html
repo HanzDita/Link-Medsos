@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:ital,wght@0,100;0,400;1,200&family=Roboto+Slab:wght@700&display=swap");
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: white;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .animasi {
+      width: 100%;
+      height: 50%;
+      background-color: blue;
+    }
+
+    .shapes1 {
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      border-radius: 0px 2px 0px 2px;
+      animation: anjay 1.5s infinite alternate;
+    }
+
+    .shapes2 {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+
+    .isi {
+      margin-top: 10px;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      border-radius: 0px 2px 0px 2px;
+      animation: anjay1 1.5s infinite alternate;
+    }
+
+    .shapes3 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .isi1 {
+      margin-top: 10px;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      border-radius: 0px 2px 0px 2px;
+      animation: anjay2 2.5s infinite alternate;
+    }
+
+    .shapes4 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .isi2 {
+      margin-top: 10px;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      border-radius: 0px 2px 0px 2px;
+      animation: anjay3 6.5s infinite alternate;
+    }
+
+    .shapes5 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .isi3 {
+      margin-top: 10px;
+      width: 80px;
+      height: 4px;
+      background-color: white;
+      border-radius: 0px 2px 0px 2px;
+      animation: anjay2 3.5s infinite alternate;
+    }
+    .shapes6 {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+
+    .isi4 {
+      margin-top: 100px;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      animation: anjay4 1.8s infinite alternate;
+    }
+
+    .shapes7 {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+
+    .isi5 {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+      animation: anjay5 1.8s infinite alternate;
+    }
+
+    @keyframes anjay5 {
+      0% {
+        transform: translateY(80px);
+      }
+
+      100% {
+        transform: translateY(-80px);
+      }
+    }
+    @keyframes anjay4 {
+      0% {
+        transform: translateY(-80px);
+      }
+
+      100% {
+        transform: translateY(80px);
+      }
+    }
+
+    @keyframes anjay3 {
+      0% {
+        transform: translateX(-300px);
+      }
+
+      100% {
+        transform: translateX(300px);
+      }
+    }
+
+    @keyframes anjay2 {
+      0% {
+        transform: translateX(300px);
+      }
+
+      100% {
+        transform: translateX(-300px);
+      }
+    }
+
+    @keyframes anjay1 {
+      0% {
+        transform: translateX(-300px);
+      }
+    }
+
+    @keyframes anjay {
+      0% {
+        transform: translateX(300px);
+      }
+
+      100% {
+        transform: translateX(10px);
+      }
+    }
+
+    .wrap {
+      height: 80%;
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      border-radius: 200px 200px 0px 0px;
+      background-color: aqua;
+      backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: center;
+    }
+
+    .profil {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 50%;
+    }
+
+    .pp {
+      text-align: center;
+    }
+
+    .foto {
+      margin-left: 5px;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .foto img {
+      height: 70%;
+      border-radius: 50%;
+      width: 70%;
+      border: solid white 5px;
+      padding: 5px;
+    }
+
+    img {
+      height: 20px;
+    }
+
+    img .linkedin :hover {
+      image-resolution: 20px;
+    }
+
+    .icons {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .link {
+      height: 50%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .link a {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 4px 4.5px;
+      border-radius: 5px;
+      transition: 0.5s;
+    }
+
+    .link a:nth-child(1) {
+      width: 100%;
+      height: 15%;
+      background-color: white;
+    }
+
+    .link a:nth-child(2) {
+      width: 100%;
+      height: 15%;
+      background-color: white;
+    }
+    .link a:nth-child(3) {
+      width: 100%;
+      height: 15%;
+      background-color: white;
+    }
+    .link a:nth-child(4) {
+      width: 100%;
+      height: 15%;
+      background-color: white;
+    }
+
+    .link a:hover {
+      transform: translate(4px, 4.5px);
+      box-shadow: 0px 0px 0px 0px;
+      background-color: black;
+      color: white;
+      border: solid lightblue 2px;
+    }
+  </style>
+  <body>
+    <div class="animasi">
+      <div class="shapes1"></div>
+      <div class="shapes2"><div class="isi"></div></div>
+      <div class="shapes3"><div class="isi1"></div></div>
+      <div class="shapes4"><div class="isi2"></div></div>
+      <div class="shapes5"><div class="isi3"></div></div>
+      <div class="shapes6"><div class="isi4"></div></div>
+      <div class="shapes7"><div class="isi5"></div></div>
+    </div>
+    <div class="wrap">
+      <div class="profil">
+        <div class="pp">
+          <div class="foto">
+            <img src="file:///C:/Users/USER/Desktop/belajar%20CSS/man.jpg" />
+          </div>
+          <h3
+            style="
+              font-family: 'Lato', sans-serif;
+              font-family: 'Poppins', sans-serif;
+              font-family: 'Roboto Slab', serif;
+            "
+          >
+            Rayhan Dita
+          </h3>
+          <h5>Front End</h5>
+        </div>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/rayhan-socreepy-4b47282a0/"
+            ><img
+              src="file:///C:/Users/USER/Desktop/belajar%20CSS/linkedin-logo.png"
+              class="linkedin"
+          /></a>
+          <a href="https://www.intagram.com"
+            ><img
+              src="file:///C:/Users/USER/Desktop/belajar%20CSS/instagram.png"
+              class="instagram"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC7LLnz7gEQspB0QGHoErIiw"
+            ><img
+              src="file:///C:/Users/USER/Desktop/belajar%20CSS/youtube.png"
+              class="youtube"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img
+              src="file:///C:/Users/USER/Desktop/belajar%20CSS/facebook.png"
+              class="facebok"
+          /></a>
+        </div>
+        <div class="link">
+          <a href="login.html">Portofolio</a>
+          <a href="https://wordpress.com/view/myportofolio45.wordpress.com"
+            >Wordpress</a
+          >
+          <a href="#">School</a>
+          <a href="https://www.whatsapp.com">Contact Me</a>
+        </div>
+        <footer>
+          <a href="#" style="text-decoration: none; color: black">By Rayhan</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
